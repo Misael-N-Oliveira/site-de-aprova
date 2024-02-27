@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Condicional</title>
+</head>
+
+<body>
+<div class="main1">
+
+    <div class="left">
+        <h1>Faça sua CNH <br>Entre 
+            Para nosso time !!!</h1>
+            <img src="car-finance-animate.svg" class="left-img-login" alt="">
+    </div>   
+
+    <div class="right">
+
+        <div class="carde">
+        <p>Por favor informe sua Idade:</p>
+        <input type="number" name="" id="idadeInput"><br>
+        <button class="btn" onclick="verificarIdade()">Verificar</button>
+    
+
+    <script>
+        function verificarIdade() {
+            var idade = parseInt(document.getElementById("idadeInput").value);
+            if (idade >= 18) {
+                window.location.href = 'maior.html';
+            } else {
+                window.location.href = 'menor.html';
+            }
+        }
+   
+    </script>
+        </div>
+    </div>
+       
+</body>
+
+</html>
+        
+
+ 
